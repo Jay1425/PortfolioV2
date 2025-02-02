@@ -10,9 +10,6 @@ Welcome to **PortfolioV2**, the second version of my portfolio website. This rep
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Setup](#setup)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
