@@ -1,84 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Cyberpunk Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-     <!-- Pre-Portfolio Fade-in Welcome Text -->
-     <div class="welcome-overlay">
-        <div class="welcome-text">
-            <span class="word">Welcome</span>
-            <span class="word">to</span>
-            <span class="word">AI</span>
-            <span class="word">Cyberspace</span>
-        </div>
+  <header>
+    <div class="container">
+      <h1>Jay1425</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar fade-in">
-        <div class="navbar-container">
-            <a href="#" class="navbar-brand">Jay</a>
-            <ul class="navbar-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero fade-in">
-        <div class="hero-content">
-            <h1>Welcome to My AI Portfolio</h1>
-            <p>Passionate about Artificial Intelligence, Machine Learning, and Data Science</p>
-            <div class="social-links">
-                <a href="https://github.com/Jay1425" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jayraychura" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/jay_raychura_" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about fade-in" id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>I am an AI student, exploring the fascinating world of machine learning and deep learning. Check out some of my work below!</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects fade-in" id="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <i class="fas fa-wallet project-icon"></i>
-                <h3>AI-based Budget Tracker</h3>
-                <p>A web app for tracking your finances using AI algorithms.</p>
-            </div>
-            <div class="project-card">
-                <i class="fas fa-robot project-icon"></i>
-                <h3>Machine Learning Chatbot</h3>
-                <p>A chatbot that learns and improves over time using ML techniques.</p>
-            </div>
-            <div class="project-card">
-                <i class="fas fa-image project-icon"></i>
-                <h3>Image Recognition App</h3>
-                <p>An app that uses deep learning for image classification.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer fade-in" id="contact">
-        <p>Connect with me: <a href="mailto:jayraychura13@gmail.com">mail-me</a></p>
-    </footer>
-
-    <!-- Scroll-to-Top Button -->
-    <button class="scroll-top fade-in" onclick="scrollToTop()">↑</button>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <h2>Welcome to My Cyberpunk Portfolio</h2>
+      <p>I'm Jay1425, an AI & Data Science enthusiast exploring the future of technology.</p>
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="container content">
+      <h2>About Me</h2>
+      <p>I specialize in artificial intelligence, data science, and futuristic technologies that merge creativity with robust analytics. My projects explore advanced machine learning, innovative data visualization, and cutting-edge neural networks.</p>
+    </div>
+  </section>
+  
+  <section id="projects">
+    <div class="container content">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>AI Stellar Chatbot</h3>
+        <p>An intelligent chatbot that guides users like a cosmic navigator by merging natural language processing with advanced AI protocols.</p>
+      </div>
+      <div class="project">
+        <h3>Galaxy Data Visualizer</h3>
+        <p>An interactive data visualization tool that transforms raw data into a mesmerizing galaxy of insights and trends.</p>
+      </div>
+      <div class="project">
+        <h3>Cybernetic Neural Networks</h3>
+        <p>Deep learning models inspired by futuristic architectures that push the boundaries of artificial intelligence.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="container content">
+      <h2>Contact Me</h2>
+      <p>Join me in the digital revolution. Connect and collaborate as we journey into the future of technology.</p>
+      <ul>
+        <li>Email: <a href="mailto:jayraychura13@gmail.com">mail-me</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jayraychura" target="_blank">LinkedIn</a></li>
+        <li>GitHub: <a href="https://github.com/jay1425" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jay1425. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="static/script/script.js"></script>
 </body>
 </html>
