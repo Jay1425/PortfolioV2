@@ -18,3 +18,23 @@ document.addEventListener("DOMContentLoaded", function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+async function askGemini() {
+    const query = document.getElementById("userQuery").value;
+    const responseDiv = document.getElementById("response");
+
+    responseDiv.innerText = "Loading...";
+    
+    const response = await fetch("/ask_gemini", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ query })
+    });
+
+    const data = await response.json();
+    responseDiv.innerText = data.response || "Error: " + data.error;
+}
+
+
