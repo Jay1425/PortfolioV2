@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, request, jsonify
 import google.generativeai as genai
 
 app = Flask(__name__)
-genai.configure(api_key="AIzaSyBUY0y2cs8V9TDAzh2NrbMIselm9riYCnY")
+genai.configure(api_key="api")
 model = genai.GenerativeModel("gemini-pro")
 
 @app.route('/')
