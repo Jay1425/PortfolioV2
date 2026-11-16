@@ -1,8 +1,9 @@
+import os
 from flask import Flask, render_template, url_for, request, jsonify
 import google.generativeai as genai
 
 app = Flask(__name__)
-genai.configure(api_key="api")
+genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 model = genai.GenerativeModel("gemini-pro")
 
 @app.route('/')
